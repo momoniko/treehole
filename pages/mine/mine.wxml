@@ -1,0 +1,29 @@
+<!--pages/square/square.wxml-->
+<scroll-view class="scbg" scroll-y="true">
+<!--头像-->
+  <view class="personalInf">
+    <view class="deco">
+      <open-data class="ava" type="userAvatarUrl"></open-data>
+    </view>
+      <open-data class="nn" type="userNickName"></open-data>
+  </view>
+  <block wx:for="{{userdata}}" wx:for-item="itemName" wx:for-index="id" wx:key="id">
+  <view class="box">
+    <view class="secondblock">
+      <text class="content">{{itemName.content}}</text>
+      <view class="tel">
+        <text class="showtime">{{itemName.send_timestamp}}</text>
+      </view>
+    </view>
+    <view class="thirdblock">
+      <view class="zan">
+        <image class="like" src="/image/爱心.png"></image>
+        <text class="num">{{itemName.total_likes}}</text>
+      </view>
+     <view class="del">
+       <text class="neirong"  id="{{itemName.id}}" bindtap="delete">删除</text></view>
+    </view>
+  </view>
+  </block>
+</scroll-view>
+<include src="/pages/bottom_menu/bottom_menu" />

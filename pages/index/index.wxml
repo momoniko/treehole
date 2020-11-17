@@ -1,0 +1,17 @@
+<!--index.wxml-->
+
+  <view class="backgorud">
+   <view class="hello">Hello! Bady</view>
+   <view class="first">
+     <input id='name' placeholder='用户名' class="inputs" placeholder-class="plas" type="text" bindinput="usernameInput"></input>
+    </view>
+    <view class="second">
+       <input id='password' placeholder='密码' class="inputs" placeholder-class="plas" type="password" bindinput="passwordInput"></input>
+      </view>
+      <view id='btn' class="click" bindtap="login">登录</view>
+      <view class="cha" bindtap="signup">
+    <text class="no" >没有账号，点击注册</text>
+  </view>
+</view>
+
+

@@ -1,0 +1,12 @@
+<!--pages/bottom_menu/bottom_menu.wxml-->
+<view class="bottomrow">
+  <view class="bottomtab" bindtap="first_choose">
+    <text class="bottomtabText" style="color:{{firco}}">广场</text>
+  </view>
+  <view class="centering" bindtap="second_choose">
+    <image class="bottomImg"  src="/image/喜爱.png"></image>
+  </view>
+  <view class="bottomtab" bindtap="third_choose">
+    <text class="bottomtabText" style="color:{{firco1}}">我的</text>
+  </view>
+</view>
